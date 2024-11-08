@@ -1,0 +1,2 @@
+requests>=2.19,<3
+RPi.GPIO>=0.6,<1
