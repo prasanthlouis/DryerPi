@@ -9,7 +9,6 @@ GPIO.setmode(GPIO.BCM)
 MOTION_PIN = 14 
 GPIO.setup(MOTION_PIN, GPIO.IN)
 
-# Placeholder function for motion detection
 def detect_motion():
     if GPIO.input(MOTION_PIN):
         print("Motion Detected")
@@ -48,7 +47,7 @@ while True:
     
     if current_time - last_motion_time >= MOTION_TIMEOUT and washer_dryer_on:
         send_notification("No motion detected for 5 minutes. Washer and Dryer are likely off.")
-        washer_dryer_on = False  # Washer and dryer are assumed to be off now
+        washer_dryer_on = False
     
     time.sleep(1)
 
