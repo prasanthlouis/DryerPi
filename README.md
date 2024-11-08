@@ -15,3 +15,9 @@ This project uses a Raspberry Pi Zero 2 W and an SW-420 Vibration Sensor to dete
 The code is functional but a bit rough. Feel free to edit and improve it to fit your needs!
 
 ## Enjoy! ❤️
+
+## Screenshots
+
+
+![20241108_100432](https://github.com/user-attachments/assets/8c4a28f5-7a97-4fdf-9ed6-f64af5086588)
+![20241108_100428](https://github.com/user-attachments/assets/56b0a308-9c53-4d68-8d29-1230980c5146)
