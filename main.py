@@ -44,16 +44,15 @@ while True:
     
     if motion_count >= MOTION_THRESHOLD and not washer_dryer_on:
         washer_dryer_on = True
+        print("Washer and Dryer started. Monitoring...")
         send_notification("Washer and Dryer started. Monitoring...")
 
     if current_time - last_motion_time >= MOTION_TIMEOUT:
         if washer_dryer_on:
+            print("No motion detected for 5 minutes. Washer and Dryer are likely off.")
             send_notification("No motion detected for 5 minutes. Washer and Dryer are likely off.")
             washer_dryer_on = False
             motion_count = 0 
-
-    if current_time - last_motion_time < MOTION_TIMEOUT and not motion_detected:
-        motion_count = 0 
 
     time.sleep(1)
 
