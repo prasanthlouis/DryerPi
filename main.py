@@ -9,7 +9,6 @@ GPIO.setmode(GPIO.BCM)
 MOTION_PIN = 14 
 GPIO.setup(MOTION_PIN, GPIO.IN)
 
-# Placeholder function for motion detection
 def detect_motion():
     if GPIO.input(MOTION_PIN):
         print("Motion Detected")
